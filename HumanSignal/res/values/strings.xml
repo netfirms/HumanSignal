@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, HumanSignalActivity!</string>
+    <string name="app_name">HumanSignal</string>
+    <string name="startmeasure">Start measure</string>
+    <string name="stopmeasure">Stop measure</string>
+    <string name="heartRate">"Heart Rate: "</string>
+    <string name="beatperminute">bpm</string>
+    <string name="signalrangeform">Signal Range Form</string>
+    <string name="signalrangeto">Signal Range To</string>
+    <string name="signalfftanalyse">Analyze</string>
+    <string name="signalanalysistitle">Fast Fourier Transforn</string>
+    <string name="signalvaluefromtitle">From:</string>
+    <string name="signalvaluetotitle">To:</string>
+
+</resources>

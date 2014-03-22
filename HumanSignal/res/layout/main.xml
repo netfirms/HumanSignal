@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:keepScreenOn="true"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="82dp" >
+
+        <Button
+            android:id="@+id/measureBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dip"
+            android:onClick="plottingControl"
+            android:text="@string/startmeasure" />
+
+        <EditText
+            android:id="@+id/signalRangeFromTxt"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dip"
+            android:hint="@string/signalrangeform"
+            android:visibility="invisible" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/signalRangeToTxt"
+            android:layout_width="58dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dip"
+            android:hint="@string/signalrangeto"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dip"
+            android:onClick="signalAnalysis"
+            android:text="@string/signalfftanalyse"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:id="@+id/graph2"
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="2dip"
+                    android:layout_weight="0.50" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/realtimefftlayout"
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="2dip"
+                    android:layout_weight="0.50"
+                    android:orientation="vertical" >
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/hudinfo"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dip"
+                    android:drawablePadding="25dip"
+                    android:text="@string/heartRate"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/hearthrateTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dip"
+                    android:drawablePadding="10dip"
+                    android:text="0"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="35dip" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dip"
+                    android:drawablePadding="25dip"
+                    android:text="@string/beatperminute"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="30dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/graph1"
+                android:layout_width="fill_parent"
+                android:layout_height="250dip" >
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+</LinearLayout>
